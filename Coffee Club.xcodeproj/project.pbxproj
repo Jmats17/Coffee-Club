@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		D05C842E23837BEC00786C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C842C23837BEC00786C39 /* Main.storyboard */; };
 		D05C843023837BEF00786C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C842F23837BEF00786C39 /* Assets.xcassets */; };
 		D05C843323837BEF00786C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05C843123837BEF00786C39 /* LaunchScreen.storyboard */; };
+		D05C843B2383835C00786C39 /* GooglePlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843A2383835C00786C39 /* GooglePlacesService.swift */; };
+		D05C843D238383A800786C39 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843C238383A800786C39 /* Cafe.swift */; };
+		D05C843F2383878200786C39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843E2383878200786C39 /* Constants.swift */; };
+		D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C844023838B9A00786C39 /* GoogleMapsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D05C842F23837BEF00786C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D05C843223837BEF00786C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D05C843423837BEF00786C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05C843A2383835C00786C39 /* GooglePlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesService.swift; sourceTree = "<group>"; };
+		D05C843C238383A800786C39 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+		D05C843E2383878200786C39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D05C844023838B9A00786C39 /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsService.swift; sourceTree = "<group>"; };
 		E7943A257BA2AC11C8F5D971 /* Pods_Coffee_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F195D4F23A37A8130BD3B3BB /* Pods-Coffee Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee Club.release.xcconfig"; path = "Target Support Files/Pods-Coffee Club/Pods-Coffee Club.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +56,6 @@
 				91C9A0D5B4CBDEA0ED94DBD2 /* Pods-Coffee Club.debug.xcconfig */,
 				F195D4F23A37A8130BD3B3BB /* Pods-Coffee Club.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,10 @@
 				D05C842623837BEC00786C39 /* AppDelegate.swift */,
 				D05C842823837BEC00786C39 /* SceneDelegate.swift */,
 				D05C842A23837BEC00786C39 /* ViewController.swift */,
+				D05C843A2383835C00786C39 /* GooglePlacesService.swift */,
+				D05C844023838B9A00786C39 /* GoogleMapsService.swift */,
+				D05C843E2383878200786C39 /* Constants.swift */,
+				D05C843C238383A800786C39 /* Cafe.swift */,
 				D05C842C23837BEC00786C39 /* Main.storyboard */,
 				D05C842F23837BEF00786C39 /* Assets.xcassets */,
 				D05C843123837BEF00786C39 /* LaunchScreen.storyboard */,
@@ -227,7 +238,11 @@
 			files = (
 				D05C842B23837BEC00786C39 /* ViewController.swift in Sources */,
 				D05C842723837BEC00786C39 /* AppDelegate.swift in Sources */,
+				D05C843B2383835C00786C39 /* GooglePlacesService.swift in Sources */,
+				D05C843D238383A800786C39 /* Cafe.swift in Sources */,
 				D05C842923837BEC00786C39 /* SceneDelegate.swift in Sources */,
+				D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */,
+				D05C843F2383878200786C39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

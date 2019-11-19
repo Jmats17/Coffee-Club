@@ -7,8 +7,7 @@ target 'Coffee Club' do
   pod 'GooglePlaces'
   pod 'GoogleMaps'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'Alamofire', '~> 5.0.0-rc.3'
-
+  pod 'Alamofire'
   # Pods for Coffee Club
 
 end
