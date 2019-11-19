@@ -13,6 +13,6 @@ struct Constants {
     struct API {
         static let placeURL = "https://maps.googleapis.com/maps/api/place/"
         static let nearbySearch = "nearbysearch/json"
-        static let key = "AIzaSyDqWoQK9wEPMwQ11wkxjmEecOH7_Ij8898"
+        static let key = ""
     }
 }

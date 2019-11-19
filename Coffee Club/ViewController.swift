@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         if let location = locationManager.location {
             GooglePlacesService.retrieveCafes(latitude: Double(location.coordinate.latitude), longitude: Double(location.coordinate.longitude), radius: 2000) { (cafes) in
-                print(cafes)
+                print(cafes.count)
             }
         } else {
             retrieveUsersLocation()
