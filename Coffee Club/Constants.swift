@@ -11,8 +11,6 @@ import Foundation
 struct Constants {
     
     struct API {
-        static let placeURL = "https://maps.googleapis.com/maps/api/place/"
-        static let nearbySearch = "nearbysearch/json"
-        static let key = ""
+        static let placeURL = "https://api.yelp.com/v3/businesses/search?term=coffee&"
     }
 }

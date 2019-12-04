@@ -13,25 +13,42 @@ struct Cafe {
     
     let latitude : Double
     let longitude : Double
-    let icon : String
+    let img_URL : String
     let place_id : String
     let name : String
-    let openNow : Bool
+    let isClosed : Bool
     let priceLevel : Int
     let rating : Double
-    let types : [String]
-    let address : String
+    let street : String
+    let city : String
+    let zipCode : String
+    let country : String
+    let state : String
+    let url : String
+    let numReviews : Int
+    let distanceInMeters : Double
+    let displayPhone : String
+    let phone : String
     
     init(json : JSON) {
-        latitude = json["geometry"]["location"]["lat"].doubleValue
-        longitude = json["geometry"]["location"]["lng"].doubleValue
-        icon = json["icon"].stringValue
-        place_id = json["place_id"].stringValue
+        latitude = json["coordinates"]["latitude"].doubleValue
+        longitude = json["coordinates"]["longitude"].doubleValue
+        img_URL = json["image_url"].stringValue
+        place_id = json["id"].stringValue
         name = json["name"].stringValue
-        openNow = json["opening_hours"]["open_now"].boolValue
-        priceLevel = json["price_level"].intValue
+        isClosed = json["is_closed"].boolValue
+        priceLevel = json["price"].intValue
         rating = json["rating"].doubleValue
-        types = json["types"].arrayObject as! [String]
-        address = json["vicinity"].stringValue
+        street = json["location"]["address1"].stringValue
+        city = json["location"]["city"].stringValue
+        zipCode = json["location"]["zip_code"].stringValue
+        country = json["location"]["country"].stringValue
+        state = json["location"]["state"].stringValue
+        url = json["url"].stringValue
+        numReviews = json["review_count"].intValue
+        distanceInMeters = json["distance"].doubleValue
+        displayPhone = json["display_phone"].stringValue
+        phone = json["phone"].stringValue
+
     }
 }
