@@ -7,12 +7,14 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.6.0):
     - GoogleMaps/Base (= 3.6.0)
+  - KFSwiftImageLoader (4.0.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
   - GoogleMaps
   - GooglePlaces
+  - KFSwiftImageLoader (~> 4.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -20,14 +22,16 @@ SPEC REPOS:
     - Alamofire
     - GoogleMaps
     - GooglePlaces
+    - KFSwiftImageLoader
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   GoogleMaps: 82f8fe307193bb4de6ef6bf9e88f1d624b718f9d
   GooglePlaces: 1b9d29cf3e164903d873600f511f42acdfe85294
+  KFSwiftImageLoader: f6edb1af1c9ed23906509d4db7e00edc1086228b
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 047abbb41bbcb41774bcafddc257934f275731df
+PODFILE CHECKSUM: c31944c0118fc20ff281f13f487da5b8a2a5d4f0
 
 COCOAPODS: 1.8.4

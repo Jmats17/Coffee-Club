@@ -25,19 +25,18 @@
                                 <rect key="frame" x="24" y="125" width="366" height="771"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CafeCell" rowHeight="150" id="vaV-gd-haR" customClass="CafeTableViewCell" customModule="Coffee_Club" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="366" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CafeCell" rowHeight="139" id="vaV-gd-haR" customClass="CafeTableViewCell" customModule="Coffee_Club" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="366" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vaV-gd-haR" id="lpc-KY-651">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-10-63w">
                                                     <rect key="frame" x="0.0" y="11" width="366" height="99"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QdB-CL-ty1">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QdB-CL-ty1">
                                                             <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peets Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-jB-DLF">
                                                             <rect key="frame" x="107" y="8" width="99" height="21"/>
@@ -64,8 +63,12 @@
                                                     <color key="backgroundColor" red="0.97254901960784312" green="0.93725490196078431" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="xbI-jB-DLF" firstAttribute="leading" secondItem="ciq-10-63w" secondAttribute="leading" constant="107" id="6gD-TP-XuX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="QdB-CL-ty1" secondAttribute="bottom" id="Crv-aw-XOR"/>
                                                         <constraint firstItem="LXN-JN-zCo" firstAttribute="top" secondItem="kuI-xL-RTO" secondAttribute="bottom" constant="4" id="Edc-Uc-Bry"/>
+                                                        <constraint firstItem="QdB-CL-ty1" firstAttribute="leading" secondItem="ciq-10-63w" secondAttribute="leading" id="QKE-Ry-JtA"/>
                                                         <constraint firstItem="LXN-JN-zCo" firstAttribute="leading" secondItem="kuI-xL-RTO" secondAttribute="leading" id="WUL-7x-AVw"/>
+                                                        <constraint firstItem="QdB-CL-ty1" firstAttribute="top" secondItem="ciq-10-63w" secondAttribute="top" id="Yz4-3w-Wdk"/>
+                                                        <constraint firstItem="xbI-jB-DLF" firstAttribute="leading" secondItem="QdB-CL-ty1" secondAttribute="trailing" constant="8" id="gjh-fV-d3F"/>
                                                         <constraint firstItem="xbI-jB-DLF" firstAttribute="top" secondItem="ciq-10-63w" secondAttribute="top" constant="8" id="ize-GB-XbM"/>
                                                         <constraint firstItem="kuI-xL-RTO" firstAttribute="leading" secondItem="xbI-jB-DLF" secondAttribute="leading" id="ruu-JI-mrI"/>
                                                         <constraint firstItem="kuI-xL-RTO" firstAttribute="top" secondItem="xbI-jB-DLF" secondAttribute="bottom" constant="4" id="v9e-4x-5KD"/>
@@ -92,10 +95,10 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="HIy-D2-vea" secondAttribute="bottom" constant="27" id="Cqz-F9-sor"/>
+                                                <constraint firstAttribute="bottom" secondItem="ciq-10-63w" secondAttribute="bottom" constant="29" id="ES6-e9-6vw"/>
                                                 <constraint firstItem="ciq-10-63w" firstAttribute="leading" secondItem="lpc-KY-651" secondAttribute="leading" id="F5t-bx-z1f"/>
-                                                <constraint firstAttribute="bottom" secondItem="ciq-10-63w" secondAttribute="bottom" constant="40" id="GI9-ba-5Hm"/>
                                                 <constraint firstItem="ciq-10-63w" firstAttribute="top" secondItem="lpc-KY-651" secondAttribute="top" constant="11" id="LHN-fA-nwt"/>
+                                                <constraint firstAttribute="bottom" secondItem="HIy-D2-vea" secondAttribute="bottom" constant="16" id="PQM-bj-ugw"/>
                                                 <constraint firstAttribute="trailing" secondItem="ciq-10-63w" secondAttribute="trailing" id="Rwz-vn-XzX"/>
                                                 <constraint firstItem="HIy-D2-vea" firstAttribute="leading" secondItem="ciq-10-63w" secondAttribute="trailing" constant="-135" id="r37-ac-iFi"/>
                                             </constraints>

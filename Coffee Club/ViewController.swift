@@ -16,11 +16,23 @@ class ViewController: UIViewController {
     var locationManager = CLLocationManager()
     var currentLocation : CLLocation?
     @IBOutlet var tableView : UITableView!
+    var activityIndicator = UIActivityIndicatorView()
     var cafes = [Cafe]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadIndicator()
+        tableView.separatorStyle = .none
         updateCafesAndLocation()
+    }
+    
+    func loadIndicator() {
+        activityIndicator = UIActivityIndicatorView(frame: CGRect(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2, width: 0, height: 0))
+        activityIndicator.style = .large
+        activityIndicator.color = .gray
+        self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+        
     }
     
     private func updateCafesAndLocation() {
@@ -28,6 +40,8 @@ class ViewController: UIViewController {
             YelpAPIService.retrieveCafes(latitude: Double(location.coordinate.latitude), longitude: Double(location.coordinate.longitude), radius: 2000) { (cafes) in
                 self.cafes = cafes
                 self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.removeFromSuperview()
             }
         } else {
             retrieveUsersLocation()
@@ -59,7 +73,7 @@ extension ViewController : CLLocationManagerDelegate {
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 139
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
