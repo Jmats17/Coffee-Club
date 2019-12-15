@@ -19,6 +19,8 @@
 		D05C843F2383878200786C39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843E2383878200786C39 /* Constants.swift */; };
 		D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C844023838B9A00786C39 /* GoogleMapsService.swift */; };
 		D0FDF45523A6D782004879D0 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF45423A6D782004879D0 /* CafeTableViewCell.swift */; };
+		D0FDF45723A6E275004879D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF45623A6E275004879D0 /* ProfileViewController.swift */; };
+		D0FDF45923A6F424004879D0 /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF45823A6F424004879D0 /* CafeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D05C843E2383878200786C39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D05C844023838B9A00786C39 /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsService.swift; sourceTree = "<group>"; };
 		D0FDF45423A6D782004879D0 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		D0FDF45623A6E275004879D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D0FDF45823A6F424004879D0 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
 		E7943A257BA2AC11C8F5D971 /* Pods_Coffee_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F195D4F23A37A8130BD3B3BB /* Pods-Coffee Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee Club.release.xcconfig"; path = "Target Support Files/Pods-Coffee Club/Pods-Coffee Club.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,8 @@
 				D05C842623837BEC00786C39 /* AppDelegate.swift */,
 				D05C842823837BEC00786C39 /* SceneDelegate.swift */,
 				D05C842A23837BEC00786C39 /* ViewController.swift */,
+				D0FDF45623A6E275004879D0 /* ProfileViewController.swift */,
+				D0FDF45823A6F424004879D0 /* CafeViewController.swift */,
 				D05C843A2383835C00786C39 /* YelpAPIService.swift */,
 				D05C844023838B9A00786C39 /* GoogleMapsService.swift */,
 				D05C843E2383878200786C39 /* Constants.swift */,
@@ -244,7 +250,9 @@
 				D05C843B2383835C00786C39 /* YelpAPIService.swift in Sources */,
 				D05C843D238383A800786C39 /* Cafe.swift in Sources */,
 				D0FDF45523A6D782004879D0 /* CafeTableViewCell.swift in Sources */,
+				D0FDF45923A6F424004879D0 /* CafeViewController.swift in Sources */,
 				D05C842923837BEC00786C39 /* SceneDelegate.swift in Sources */,
+				D0FDF45723A6E275004879D0 /* ProfileViewController.swift in Sources */,
 				D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */,
 				D05C843F2383878200786C39 /* Constants.swift in Sources */,
 			);

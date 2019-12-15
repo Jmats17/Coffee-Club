@@ -58,7 +58,7 @@ class CafeTableViewCell : UITableViewCell {
         }
     }
     
-    private func convertMetersToMiles(meters : Double) -> Double {
+    func convertMetersToMiles(meters : Double) -> Double {
         return meters * 0.00062137
     }
   

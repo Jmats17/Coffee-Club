@@ -9,6 +9,7 @@ target 'Coffee Club' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire'
   pod 'KFSwiftImageLoader', '~> 4.0'
+  pod 'JTMaterialTransition', '~> 2.0'
 
   # Pods for Coffee Club
 

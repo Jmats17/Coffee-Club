@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import CoreLocation
-
+import JTMaterialTransition
 class ViewController: UIViewController {
 
     var locationManager = CLLocationManager()
@@ -18,12 +18,27 @@ class ViewController: UIViewController {
     @IBOutlet var tableView : UITableView!
     var activityIndicator = UIActivityIndicatorView()
     var cafes = [Cafe]()
+    var transition: JTMaterialTransition?
+    @IBOutlet var profileButton : UIButton!
+    var cafe : Cafe?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadIndicator()
+        self.transition = JTMaterialTransition(animatedView: self.profileButton)
         tableView.separatorStyle = .none
         updateCafesAndLocation()
+    }
+    
+    func didPresentControllerButtonTouch () {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileViewController
+        
+        profileVC.modalPresentationStyle = .custom
+        profileVC.transitioningDelegate = self.transition
+        
+        self.present(profileVC, animated: true, completion: nil)
     }
     
     func loadIndicator() {
@@ -33,6 +48,10 @@ class ViewController: UIViewController {
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
+    }
+    
+    @IBAction func presentProfileView(sender : UIButton) {
+        didPresentControllerButtonTouch()
     }
     
     private func updateCafesAndLocation() {
@@ -78,6 +97,18 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cafes.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCafeView" {
+            let cafeVC = segue.destination as? CafeViewController
+            cafeVC?.cafe = self.cafe
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.cafe = cafes[indexPath.row]
+        self.performSegue(withIdentifier: "toCafeView", sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
