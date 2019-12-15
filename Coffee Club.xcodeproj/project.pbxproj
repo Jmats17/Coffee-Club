@@ -18,6 +18,7 @@
 		D05C843D238383A800786C39 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843C238383A800786C39 /* Cafe.swift */; };
 		D05C843F2383878200786C39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C843E2383878200786C39 /* Constants.swift */; };
 		D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C844023838B9A00786C39 /* GoogleMapsService.swift */; };
+		D0FDF45523A6D782004879D0 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDF45423A6D782004879D0 /* CafeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D05C843C238383A800786C39 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		D05C843E2383878200786C39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D05C844023838B9A00786C39 /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsService.swift; sourceTree = "<group>"; };
+		D0FDF45423A6D782004879D0 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
 		E7943A257BA2AC11C8F5D971 /* Pods_Coffee_Club.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_Club.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F195D4F23A37A8130BD3B3BB /* Pods-Coffee Club.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee Club.release.xcconfig"; path = "Target Support Files/Pods-Coffee Club/Pods-Coffee Club.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				D05C844023838B9A00786C39 /* GoogleMapsService.swift */,
 				D05C843E2383878200786C39 /* Constants.swift */,
 				D05C843C238383A800786C39 /* Cafe.swift */,
+				D0FDF45423A6D782004879D0 /* CafeTableViewCell.swift */,
 				D05C842C23837BEC00786C39 /* Main.storyboard */,
 				D05C842F23837BEF00786C39 /* Assets.xcassets */,
 				D05C843123837BEF00786C39 /* LaunchScreen.storyboard */,
@@ -240,6 +243,7 @@
 				D05C842723837BEC00786C39 /* AppDelegate.swift in Sources */,
 				D05C843B2383835C00786C39 /* YelpAPIService.swift in Sources */,
 				D05C843D238383A800786C39 /* Cafe.swift in Sources */,
+				D0FDF45523A6D782004879D0 /* CafeTableViewCell.swift in Sources */,
 				D05C842923837BEC00786C39 /* SceneDelegate.swift in Sources */,
 				D05C844123838B9A00786C39 /* GoogleMapsService.swift in Sources */,
 				D05C843F2383878200786C39 /* Constants.swift in Sources */,

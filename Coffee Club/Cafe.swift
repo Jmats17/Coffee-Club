@@ -17,7 +17,7 @@ struct Cafe {
     let place_id : String
     let name : String
     let isClosed : Bool
-    let priceLevel : Int
+    let priceLevel : String
     let rating : Double
     let street : String
     let city : String
@@ -37,7 +37,7 @@ struct Cafe {
         place_id = json["id"].stringValue
         name = json["name"].stringValue
         isClosed = json["is_closed"].boolValue
-        priceLevel = json["price"].intValue
+        priceLevel = json["price"].stringValue
         rating = json["rating"].doubleValue
         street = json["location"]["address1"].stringValue
         city = json["location"]["city"].stringValue

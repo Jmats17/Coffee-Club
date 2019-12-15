@@ -14,7 +14,7 @@ struct YelpAPIService {
     
     static func retrieveCafes(latitude : Double, longitude : Double, radius : Int, completion : @escaping ([Cafe]) -> Void) {
         
-        let headers = ["Authorization" : "Bearer oUq40_UpjlU0miBUseiuuzSAL6Ynf-xAcWkuqPtvSs9Gi-g1lDJhcB_OS4iDzj2EAxOJVPvdIzoxG4wOkE0GyvN5LPiHUy32aSa90XGDdkPuRZ3bpPMQkyFGfCfoXXYx"]
+        let headers = ["Authorization" : "Bearer vlPagxO5hd5X2_VrVtHang0fwtpD0Od9leliYvwXp1bbYbzldgPnmqqRmkG6SJsn_0iQE6xqiNf7BNQG8BuhsUSjMrUcO7drgYvAG_G-SiQBKzmO6cINqQMh7jDoXXYx"]
         
         Alamofire.request(Constants.API.placeURL + "radius=\(radius)&latitude=\(latitude)&longitude=\(longitude)", method: .get, headers: headers).responseData { (response) in
             guard let data = response.result.value else { return completion([]) }

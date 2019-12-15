@@ -15,12 +15,19 @@ class ViewController: UIViewController {
 
     var locationManager = CLLocationManager()
     var currentLocation : CLLocation?
+    @IBOutlet var tableView : UITableView!
+    var cafes = [Cafe]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateCafesAndLocation()
+    }
+    
+    private func updateCafesAndLocation() {
         if let location = locationManager.location {
             YelpAPIService.retrieveCafes(latitude: Double(location.coordinate.latitude), longitude: Double(location.coordinate.longitude), radius: 2000) { (cafes) in
-                print(cafes)
+                self.cafes = cafes
+                self.tableView.reloadData()
             }
         } else {
             retrieveUsersLocation()
@@ -47,4 +54,23 @@ extension ViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         
     }
+}
+
+extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cafes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cafeCell = tableView.dequeueReusableCell(withIdentifier: "CafeCell", for: indexPath) as! CafeTableViewCell
+        let cafe = cafes[indexPath.row]
+        cafeCell.configureCell(cafe)
+        return cafeCell
+    }
+
 }
